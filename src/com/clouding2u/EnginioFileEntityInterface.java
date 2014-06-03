@@ -1,4 +1,4 @@
-package com.clouding2u.service;
+package com.clouding2u;
 
 
 import retrofit.http.Body;

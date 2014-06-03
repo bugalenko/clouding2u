@@ -1,4 +1,4 @@
-package com.clouding2u.service;
+package com.clouding2u;
 
 public class EnginioObjectIOException extends Exception {
 

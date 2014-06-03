@@ -1,4 +1,4 @@
-package com.clouding2u.service;
+package com.clouding2u;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;

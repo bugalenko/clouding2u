@@ -1,5 +1,9 @@
-package com.clouding2u.service;
+package com.clouding2u;
+
+
+
 import com.google.gson.JsonObject;
+
 public abstract class AbstractAccessControlPoliciesFabric {
 	public enum AccessPermissionsType{
 		readFromCollection("read"),

@@ -1,4 +1,4 @@
-package com.clouding2u.service;
+package com.clouding2u;
 import java.io.File;
 import java.util.HashMap;
 
