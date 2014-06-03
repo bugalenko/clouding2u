@@ -1,11 +1,8 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+package com.clouding2u.service;
 import java.util.HashMap;
 
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
 
 
 public class TestUsers {

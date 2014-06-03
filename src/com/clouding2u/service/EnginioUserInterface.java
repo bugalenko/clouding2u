@@ -1,3 +1,4 @@
+package com.clouding2u.service;
 import retrofit.http.Body;
 import retrofit.http.DELETE;
 import retrofit.http.GET;

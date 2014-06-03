@@ -1,9 +1,7 @@
-import retrofit.http.Body;
-import retrofit.http.GET;
+package com.clouding2u.service;
 import retrofit.http.Headers;
 import retrofit.http.POST;
 import retrofit.http.Query;
-import retrofit.http.QueryMap;
 
 import com.google.gson.JsonObject;
 

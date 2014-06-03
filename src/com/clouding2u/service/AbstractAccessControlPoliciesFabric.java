@@ -1,3 +1,4 @@
+package com.clouding2u.service;
 import com.google.gson.JsonObject;
 public abstract class AbstractAccessControlPoliciesFabric {
 	public enum AccessPermissionsType{

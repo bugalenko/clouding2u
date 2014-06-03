@@ -1,14 +1,14 @@
+package com.clouding2u.service;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
-import com.google.gson.JsonObject;
 
 import retrofit.ErrorHandler;
 import retrofit.RequestInterceptor;
 import retrofit.RestAdapter;
 import retrofit.RetrofitError;
-import retrofit.RequestInterceptor.RequestFacade;
 import retrofit.client.Response;
+
+import com.google.gson.JsonObject;
 
 
 public class UserCredentials {
