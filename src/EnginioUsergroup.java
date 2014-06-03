@@ -154,7 +154,7 @@ static public int update(EnginioUsergroup group){
 	return 0;
 	
 }
-static public int insertUser(User user,EnginioUsergroup group){
+static public int insertUser(EnginioUser user,EnginioUsergroup group){
 	JsonObject bodyObj=(JsonObject) new GsonBuilder().create().toJsonTree(user);
 	JsonObject responseObj=operations.addUser(group.getId(),bodyObj);
 	//добавить десириализацию
@@ -162,7 +162,7 @@ static public int insertUser(User user,EnginioUsergroup group){
 	
 }
 //??????????????????????????????????????????????????????????????!!!!!!!!!!!!!!!!!!
-static public int deleteUser(User user,EnginioUsergroup group){
+static public int deleteUser(EnginioUser user,EnginioUsergroup group){
 	JsonObject bodyObj=(JsonObject) new GsonBuilder().create().toJsonTree(user);
 	JsonObject responseObj=operations.deleteUser(group.getId(),bodyObj);
 	if(responseObj.entrySet().isEmpty()!=true) return -1;

@@ -16,10 +16,10 @@ private Root root;
 private String  secret_token=new String();	
  private String	access_token=new String();
  private String refresh_token=new String();
- private User user;
+ private EnginioUser user;
  private int expires_in=0;
  
- public UserCredentials(boolean isAdmin,User user) throws Exception{
+ public UserCredentials(boolean isAdmin,EnginioUser user) throws Exception{
 	 if (isAdmin==true){
 			  Root r=null;
 				// CloudeFile f=null;
@@ -102,7 +102,7 @@ if(responseObj.entrySet().isEmpty()!=true) return -1;
     setRequestInterceptor(requestInterceptor).setErrorHandler(new MyErrorHandler())
     .build();
 
-private  UserAuthenticationInterface operations=
-restAdapter.create(UserAuthenticationInterface.class);
+private  EnginioUserAuthenticationInterface operations=
+restAdapter.create(EnginioUserAuthenticationInterface.class);
 
 }

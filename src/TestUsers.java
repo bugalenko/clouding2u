@@ -21,20 +21,20 @@ public class TestUsers {
  String nam=  classes[0].getCanonicalName();
 	JsonElement obj=new GsonBuilder().create().toJsonTree(list, HashMap.class);	
 
-      User u2=new User("AlexanderPoet","alex@gmail.com","Sasha","Pushkin","OneginPassword");
+      EnginioUser u2=new EnginioUser("AlexanderPoet","alex@gmail.com","Sasha","Pushkin","OneginPassword");
       System.out.println();
   String s=    new GsonBuilder().create().toJson(u2);
-  User.insert(u2);
+  EnginioUser.insert(u2);
   System.out.println(s);
   u2.setUsername("NotYetPushkin");
   u2.setLastName("NotPushkin");
-  User.update(u2);
-  HashMap<String,User> byId=User.query(UserQueryBy.ById);
-  HashMap<String,User> byUsername=User.query(UserQueryBy.ByUsername);
-  HashMap<String,User> byFirstname=User.query(UserQueryBy.ByFirstname);
-  HashMap<String,User> byLastname=User.query(UserQueryBy.byLastname);
+  EnginioUser.update(u2);
+  HashMap<String,EnginioUser> byId=EnginioUser.query(UserQueryBy.ById);
+  HashMap<String,EnginioUser> byUsername=EnginioUser.query(UserQueryBy.ByUsername);
+  HashMap<String,EnginioUser> byFirstname=EnginioUser.query(UserQueryBy.ByFirstname);
+  HashMap<String,EnginioUser> byLastname=EnginioUser.query(UserQueryBy.byLastname);
   byId.isEmpty();
- User.delete(u2.getId());
+ EnginioUser.delete(u2.getId());
 	}
 
 }

@@ -10,7 +10,7 @@ import com.google.gson.JsonObject;
 
 public interface EnginioUserInterface {
 	 @POST("/users")
-	 JsonObject CreateUser(@Body User user);
+	 JsonObject CreateUser(@Body EnginioUser user);
 	   @GET("/users")  
 	 JsonObject getAllUsers();
 	   @DELETE("/users/{id}")   

@@ -12,8 +12,8 @@ public class EnginioObjectPoliciesFabric extends AbstractAccessControlPoliciesFa
 	
 	private HashMap<AccessPermissionsType,HashMap<String,EnginioUsergroup>> credentialsForUsergroup=
 			new HashMap<AccessPermissionsType,HashMap<String, EnginioUsergroup>>();
-	private HashMap<AccessPermissionsType,HashMap<String,User>> credentialsForUser=
-			new HashMap<AccessPermissionsType,HashMap<String, User>>();
+	private HashMap<AccessPermissionsType,HashMap<String,EnginioUser>> credentialsForUser=
+			new HashMap<AccessPermissionsType,HashMap<String, EnginioUser>>();
 AbstractEnginioObject collectionsObject;
 public EnginioObjectPoliciesFabric(AbstractEnginioObject collectionObject) {
 	// TODO Auto-generated constructor stub
@@ -60,7 +60,7 @@ if(permissionsList!=null) {
 	 obj.addProperty("objectType","usergroups");
 	 arrayJson.add(obj);
  }}
- HashMap<String,User> permissionsList2=credentialsForUser.get(permissionsType);
+ HashMap<String,EnginioUser> permissionsList2=credentialsForUser.get(permissionsType);
  if(permissionsList2!=null) {
  // добавление  пользователей в правила доступа
 int size=permissionsList2.size();
@@ -74,14 +74,14 @@ int size=permissionsList2.size();
 	return requestJson;
 }
 @Override
-int addUser(AccessPermissionsType accessPermissions, User user) {
+int addUser(AccessPermissionsType accessPermissions, EnginioUser user) {
 	// TODO Auto-generated method stub
-	HashMap<String,User> users=null;
+	HashMap<String,EnginioUser> users=null;
 	if(credentialsForUser.containsValue(user)) return -1;
 	String id=null;
 	if(user.getId().isEmpty()) return -1;
 	users=credentialsForUser.get(accessPermissions);
-	if(users==null) users=new HashMap<String,User>();
+	if(users==null) users=new HashMap<String,EnginioUser>();
 	users.put(user.getId(),user);
 	return 0;
 }

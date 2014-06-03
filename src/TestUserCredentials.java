@@ -40,10 +40,10 @@ String str= newRange.toString();*/
 	EnginioUsergroup.insert(group2);
 	
 	String password="OneginPasswords";
-	 User u2=new User("AlexanderPoet4","alex4@gmail.com","Sashas4","Pushkins4",password);
-	 User.insert(u2);
-	 User u3=new User("AlexanderPoet5","alex5@gmail.com","Sashas5","Pushkins5",password);
-	 User.insert(u3);
+	 EnginioUser u2=new EnginioUser("AlexanderPoet4","alex4@gmail.com","Sashas4","Pushkins4",password);
+	 EnginioUser.insert(u2);
+	 EnginioUser u3=new EnginioUser("AlexanderPoet5","alex5@gmail.com","Sashas5","Pushkins5",password);
+	 EnginioUser.insert(u3);
 	int resp= EnginioUsergroup.insertUser(u2,group1);
 	resp= EnginioUsergroup.insertUser(u3,group1);
 	
@@ -56,7 +56,7 @@ String str= newRange.toString();*/
 	 cred.getAccessToken();
 	 cred.refreshTokens();
 	 cred.removeTokens();
-	 User.delete(u2.getId());
+	 EnginioUser.delete(u2.getId());
 	 
 }
 }

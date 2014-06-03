@@ -15,7 +15,7 @@ public abstract class AbstractAccessControlPoliciesFabric {
 		}
 	};
 	abstract int addUsergroup(AccessPermissionsType accessPermissions,EnginioUsergroup usergroup);
-	abstract int addUser(AccessPermissionsType accessPermissions,User user);
+	abstract int addUser(AccessPermissionsType accessPermissions,EnginioUser user);
 	abstract JsonObject makeRules();
 	abstract JsonObject makeSinglePermission(AccessPermissionsType permissionsType);
 }
