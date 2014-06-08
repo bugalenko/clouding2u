@@ -3,8 +3,8 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="lib" path="C:/adt-bundle-windows-x86-20131030/sdk/platforms/android-14/android.jar"/>
-	<classpathentry kind="lib" path="E:/june_workspace/clouding2u/retrofit-1.5.1.jar"/>
-	<classpathentry kind="lib" path="E:/june_workspace/clouding2u/gson-2.2.4.jar"/>
-	<classpathentry kind="lib" path="E:/june_workspace/clouding2u/tika-app-1.5.jar"/>
+	<classpathentry kind="lib" path="I:/kursovoj/clouding2u/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="I:/kursovoj/clouding2u/retrofit-1.5.1.jar"/>
+	<classpathentry kind="lib" path="I:/kursovoj/clouding2u/tika-app-1.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
